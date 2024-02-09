@@ -1,8 +1,10 @@
-# React + Vite
+# Digital Business Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is Solo Project 1 from Scrimba React course. 
 
-Currently, two official plugins are available:
+- https://scrimba.com/learn/learnreact/solo-project-pro-digital-business-card-coce646e88eea46f91af43ca4
+  
+# Optimizations 
+I'm trying to stick to what we saw in the course. I will add props, hooks, and more as I keep doing more projects
+ 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
