@@ -1,0 +1,129 @@
+@import './base.css';
+
+.card {
+  background: var(--neutral-600);
+  width: 20rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card--image {
+  max-width: 20rem;
+  height: auto;
+}
+
+.card--content {
+  padding: 24px 36px;
+}
+
+.card--bio {
+  text-align: center;
+}
+
+.card--bio h1 {
+  color: white;
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  margin: 0;
+}
+
+.card--bio p {
+  color: var(--clr-accent);
+  font-size: var(--fs-md);
+  line-height: 1.2;
+  margin-top: 6px;
+}
+
+.card--bio a {
+  cursor: pointer;
+  display: inline-block;
+  color: var(--neutral-200);
+  margin-top: 10px;
+  transition: color 250ms ease-in-out;
+}
+
+.card--bio a:hover {
+  color: var(--clr-accent);
+}
+
+.card--btns {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-md);
+  font-weight: 500;
+  padding-inline: 14px;
+  height: 34px;
+  width: 115px;
+  border: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn--rounded {
+  border-radius: 6px;
+}
+
+.btn--primary {
+  background-color: white;
+  color: var(--neutral-300);
+}
+
+.btn--secondary {
+  background-color: var(--clr-secondary);
+  color: white;
+}
+
+.btn--icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+  /* fill: currentColor; */
+}
+
+.card--description {
+  margin-top: 16px;
+}
+
+.card--content > * + * {
+  margin-top: 34px;
+}
+
+.description_title {
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  color: var(--neutral-200);
+}
+
+.description_text {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.card--social_icons {
+  background: var(--neutral-700);
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 18px 0;
+
+  /* margin-inline: auto; */
+}
+
+.card--social_icons > li {
+  transition: opacity 250ms ease-in-out;
+}
+
+.card--social_icons > li:hover {
+  opacity: 0.8;
+}

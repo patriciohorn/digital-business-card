@@ -1,0 +1,74 @@
+:root {
+  --clr-primary: hsla(0, 0%, 100%, 1);
+  --clr-secondary: hsla(212, 72%, 60%, 1);
+  --clr-accent: hsla(25, 79%, 78%, 1);
+  --neutral-100: hsla(0, 0%, 86%, 1);
+  --neutral-200: hsla(0, 0%, 96%, 1);
+  --neutral-300: hsla(217, 19%, 27%, 1);
+  --neutral-400: hsla(227, 11%, 15%, 1);
+  --neutral-500: hsla(233, 12%, 13%, 1);
+  --neutral-600: hsla(231, 12%, 12%, 1);
+  --neutral-700: hsla(231, 7%, 9%, 1);
+
+  --fs-base: 12px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 26px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  padding: 44px 0;
+  line-height: 1.5;
+  font-size: var(--fs-base);
+  background: var(--neutral-400);
+  color: var(--neutral-100);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+:is(body, h1, h2, h3, h4, p, figure, blockquote, dl, dd) {
+  margin-block-end: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+:is(h1, h2, h3, h4, button, input, label) {
+  line-height: 1.2;
+}
+
+/* Balance text wrapping on headings */
+:is(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+:is(img, picture) {
+  max-width: 100%;
+  display: block;
+}
